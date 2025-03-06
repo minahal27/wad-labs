@@ -1,0 +1,39 @@
+body{
+    background-color: rgb(196, 223, 245)
+}
+
+body, nav, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+nav {
+    background-color: #333; 
+    overflow: hidden; 
+    display: flex; 
+    justify-content: center; 
+}
+
+
+nav a {
+    color: white; 
+    padding: 14px 20px; 
+    text-decoration: none; 
+    text-align: center; 
+    font-size: 17px; 
+    transition: background-color 0.3s; 
+}
+
+
+nav a:hover {
+    background-color: #575757; 
+    color: white; 
+}
+
+
+nav a.active {
+    background-color: #4CAF50; 
+    color: white; 
+}
