@@ -1,50 +1,69 @@
-body{
+body {
     background-color: rgb(196, 223, 245);
-    text-align:center;
+    text-align: center;
+    font-family: Arial, sans-serif;
 }
 
 body, nav, a {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-   
 }
-
 
 nav {
-    background-color: #d62424; 
-    overflow: hidden; 
-   
-    
+    background-color: #0b0b0b;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
 }
-
 
 nav a {
-    color: white; 
-    padding: 14px 20px; 
-    text-decoration: none; 
-    text-align: center; 
-    font-size: 17px; 
-    transition: background-color 0.3s; 
+    color: white;
+    padding: 14px 20px;
+    text-decoration: none;
+    text-align: center;
+    font-size: 17px;
+    transition: background-color 0.3s;
 }
-
 
 nav a:hover {
-    background-color: #575757; 
-    color: white; 
+    background-color: #575757;
+    color: white;
 }
-
 
 nav a.active {
-    background-color: #4CAF50; 
-    color: white; 
+    background-color: #4CAF50;
+    color: white;
 }
-img
-{
-    width:155px;
-    height:155px;
-    margin: 10px;
+
+img {
+    width: 155px;
+    height: 155px;
+    border-radius: 50%;
+    display: block; 
+    margin: 20px auto; 
+    border: 3px solid #0b0b0b; 
 }
- h1{
-    display:inline;
+
+#About me, #Likes, #Dislikes, #Report {
+    text-align: left; 
+    padding: 20px; 
+    margin: 20px auto; 
+    max-width: 800px; 
+    border: 1px solid #ccc; 
+    border-radius: 10px; 
+    background-color: white; 
+}
+
+h1, h2 {
+    text-align: center; 
+}
+
+p, ul, ol {
+    text-align: justify; 
+    margin: 10px 0; 
+}
+
+ul, ol {
+    padding-left: 20px; 
 }
