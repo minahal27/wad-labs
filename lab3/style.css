@@ -1,0 +1,60 @@
+body{
+    background-color: rgb(196, 223, 245);
+    text-align:justify;
+    margin:30px;
+    border-width: 10px;
+
+}
+
+body, nav, a {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   
+}
+
+
+nav {
+    background-color: #0c0c0c; 
+    overflow: hidden; 
+   
+    
+}
+
+
+nav a {
+    color: white; 
+    padding: 14px 20px; 
+    text-decoration: none; 
+    text-align: center; 
+    font-size: 17px; 
+    transition: background-color 0.3s; 
+}
+
+
+nav a:hover {
+    background-color: #575757; 
+    color: white; 
+}
+
+
+nav a.active {
+    background-color: #4CAF50; 
+    color: white; 
+}
+img
+{
+    width:155px;
+    height:155px;
+    margin: 3%;
+    border-radius:80px;
+
+
+}
+ h1{
+    display:inline;
+    margin:40%;
+    text-align:center;
+    box-sizing: border-box;
+    
+}
