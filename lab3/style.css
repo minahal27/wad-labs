@@ -1,68 +1,82 @@
-
 :root {
-    --primary-color: #451737; 
-    --secondary-color: #0c52a2; 
-    --background-color: #b8e5fc; 
-    --card-background: #fcffea; 
-    --text-color: #131313; 
-    --header-footer-color: #451737; 
-    --font-family: 'Arial', sans-serif;
+    --primary-color: #1b1f3b; 
+    --secondary-color: #d4af37; 
+    --background-color: #f5f5f5; 
+    --card-background-start: #f8f9fa; 
+    --card-background-end: #dce1eb; 
+    --text-color: #222831; 
+    --header-footer-color: #1b1f3b; 
+    --font-family: 'Poppins', sans-serif;
     --font-size-body: 16px;
-    --font-size-heading: 30px;
-    --font-size-subheading: 20px;
+    --font-size-heading: 32px;
+    --font-size-subheading: 22px;
     --spacing: 20px;
-    --border-radius: 30px;
-    --box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    --border-radius: 15px;
+    --box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
 }
-
 
 body {
     background-color: var(--background-color);
     font-family: var(--font-family);
     font-size: var(--font-size-body);
-    line-height: 1.6;
+    line-height: 1.7;
     margin: 0;
     padding: var(--spacing);
     color: var(--text-color);
 }
-
 
 header {
     text-align: center;
     margin-bottom: var(--spacing);
     background-color: var(--header-footer-color);
     padding: var(--spacing);
-    color: #ffffff;
-    border-bottom: 5px solid var(--secondary-color);
+    color: white;
+    border-bottom: 2px solid var(--secondary-color);
+    border-radius: 50px / 25px;
+    box-shadow: var(--box-shadow);
 }
 
 header .logo {
     width: 100px;
     height: auto;
-    border-radius: 50%; 
-    border: 3px solid var(--secondary-color); 
+    border-radius: 50%;
+    border: 4px solid var(--secondary-color); 
 }
 
 header h1 {
     font-size: var(--font-size-heading);
     margin-top: 10px;
-    color: white;
- 
+    font-weight: bold;
+    color: var(--secondary-color);
 }
 
+article p{
+    text-indent: 90px; 
+    margin-bottom: var(--spacing);
+}
 
 article {
-    background-color: var(--card-background);
+    background: linear-gradient(to bottom, var(--card-background-start), var(--card-background-end));
     padding: var(--spacing);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
     margin-bottom: var(--spacing);
+    border-left: 6px solid var(--secondary-color);
+    transition: transform 0.3s ease-in-out;
+}
+
+article:hover {
+    transform: scale(1.02);
 }
 
 article h2 {
     font-size: var(--font-size-heading);
     color: var(--primary-color);
     margin-bottom: var(--spacing);
+    font-weight: bold;
+    border-bottom: 2px solid var(--secondary-color);
+    display: inline-block;
+    padding-bottom: 5px;
 }
 
 article time {
@@ -73,11 +87,15 @@ article time {
 }
 
 article img.article-image {
-    width: 150px; 
+    width: 100%;
+    max-width: 250px; 
     height: auto;
     border-radius: var(--border-radius);
     margin-bottom: var(--spacing);
-    border: 1px solid var(--text-color); 
+    border: 3px solid var(--secondary-color);
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 article ul {
@@ -90,9 +108,8 @@ article ul li {
     margin-bottom: 10px;
 }
 
-
 .profile-card {
-    background-color: var(--card-background);
+    background-color: var(--card-background-start);
     padding: var(--spacing);
     border-radius: var(--border-radius);
     box-shadow: var(--box-shadow);
@@ -105,13 +122,14 @@ article ul li {
     height: 150px;
     border-radius: 50%;
     margin-bottom: var(--spacing);
-    border: 3px solid var(--secondary-color); 
+    border: 4px solid var(--secondary-color);
 }
 
 .profile-card h3 {
     font-size: var(--font-size-subheading);
     color: var(--primary-color);
     margin-bottom: 10px;
+    font-weight: bold;
 }
 
 .profile-card .bio {
@@ -122,9 +140,10 @@ article ul li {
 
 .profile-card .followers {
     font-size: var(--font-size-body);
-    color: var(--text-color);
+    color: var(--secondary-color);
     font-weight: bold;
 }
+
 
 footer {
     text-align: center;
@@ -139,4 +158,6 @@ footer {
 footer p {
     margin: 0;
     font-size: var(--font-size-body);
+    color: var(--secondary-color);
+    font-weight: bold;
 }
