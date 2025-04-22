@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
+  </head>
+  <body>
+    
+    <!-- flex -->
+
+      <div class=" m-50 p-5 mb-10 flex flex-col md:flex-row  gap-8 bg-yellow-700 justify-self-center ">
+        <div class="bg-lime-100  w-50 shadow-md rounded text-center  p-10">box1</div>
+        <div class="bg-lime-100  w-50  shadow-md rounded text-center  p-10">box2</div>
+        <div class="bg-lime-100   w-50 shadow-md rounded text-center  p-10">box3</div>
+      </div>
+
+<!--grid-->
+<div class=" m-50 p-5 mt-50 grid grid-cols-3 gap-4 bg-yellow-700 justify-self-center">
+  <div class="bg-lime-100  w-50 p-6 rounded shadow">cell 1</div>
+  <div class="bg-lime-100 p-6 rounded shadow">cell 2</div>
+  <div class="bg-lime-100 p-6 rounded shadow">cell 3</div>
+  <div class="bg-lime-100 p-6 rounded shadow">cell 4</div>
+  <div class="bg-lime-100 p-6 rounded shadow">cell 5</div>
+  <div class="bg-lime-100 p-6 rounded shadow">cell 6</div>
+  
+</div>
+
+<!--paragraph-->
+<div class="max-w-2xl mx-auto p-5 pl-8 pr-8 m-10  border-2 border-yellow-900 rounded shadow-md bg-lime-100">
+  <h1 class="font-bold text-2xl text-center  text-blue-950">Quaid e Azam University</h1>
+  <br>
+  <p class="text-justify leading-normal mb-4">
+    Quaid-i-Azam University Islamabad (Urdu: جامعہ قائداعظم; commonly referred to as QAU), founded as University of Islamabad, is a public research university in Islamabad, Pakistan.
+
+    Founded as the University of Islamabad in 1967, it was initially dedicated to the study of postgraduate education, but later expanded to an interdisciplinary university offering undergraduate and postgraduate education, and established as Quaid-i-Azam University in 1976.
+    As of 2015, QAU has grown into the largest university in Islamabad with a total enrollment exceeding 13,000 students. The university is on a 1700 acres (or 6.9 km2) campus on the foothills of the Margalla. Divided into four faculties and nine affiliated research institutes, QAU is among Pakistan's largest and highest-ranked public universities.
+  </p>
+</div>
+
+<!--box-->
+<div class="box-border mb-8 mt-15 max-w-2xl w-full mx-auto h-96 rounded-xl border-8 border-black bg-cover 
+bg-[url('uni.jpg')]">
+
+</div>
+
+<!--table-->
+
+<div class="p-5">
+  <table class="border-separate border-spacing-4 border-2 border-yellow-900 mx-auto">
+    <thead>
+      <tr>
+        <th class="border border-yellow-700 p-3 bg-yellow-100">Sr.no</th>
+        <th class="border border-yellow-700 p-3 bg-yellow-100">Student ID</th>
+        <th class="border border-yellow-700 p-3 bg-yellow-100">Name</th>
+        <th class="border border-yellow-700 p-3 bg-yellow-100">Grade</th>
+        <th class="border border-yellow-700 p-3 bg-yellow-100">Attendance(%)</th>
+        <th class="border border-yellow-700 p-3 bg-yellow-100">Status</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td class="border border-yellow-700 p-3">1</td>
+        <td class="border border-yellow-700 p-3">001</td>
+        <td class="border border-yellow-700 p-3">Minahal</td>
+        <td class="border border-yellow-700 p-3">A+</td>
+        <td class="border border-yellow-700 p-3">95</td>
+        <td class="border border-yellow-700 p-3 bg-green-100">Active</td>
+      </tr>
+      <tr>
+        <td class="border border-yellow-700 p-3">2</td>
+        <td class="border border-yellow-700 p-3">002</td>
+        <td class="border border-yellow-700 p-3">Sumbal</td>
+        <td class="border border-yellow-700 p-3">A-</td>
+        <td class="border border-yellow-700 p-3">90</td>
+        <td class="border border-yellow-700 p-3 bg-green-100">Active</td>
+      </tr>
+      <tr>
+        <td class="border border-yellow-700 p-3">3</td>
+        <td class="border border-yellow-700 p-3">003</td>
+        <td class="border border-yellow-700 p-3">Kalsoom</td>
+        <td class="border border-yellow-700 p-3">A</td>
+        <td class="border border-yellow-700 p-3">88</td>
+        <td class="border border-yellow-700 p-3 bg-green-100">Active</td>
+      </tr>
+      <tr>
+        <td class="border border-yellow-700 p-3">4</td>
+        <td class="border border-yellow-700 p-3">004</td>
+        <td class="border border-yellow-700 p-3">Hamna</td>
+        <td class="border border-yellow-700 p-3">B+</td>
+        <td class="border border-yellow-700 p-3">85</td>
+        <td class="border border-yellow-700 p-3 bg-green-100">Active</td>
+      </tr>
+      <tr>
+        <td class="border border-yellow-700 p-3">5</td>
+        <td class="border border-yellow-700 p-3">005</td>
+        <td class="border border-yellow-700 p-3">Ali</td>
+        <td class="border border-yellow-700 p-3">D</td>
+        <td class="border border-yellow-700 p-3">65</td>
+        <td class="border border-yellow-700 p-3 bg-red-100">Inactive</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<!--button-->
+<div class="flex justify-center">
+  <button class="p-4 mt-5 mb-4 bg-purple-600 hover:bg-purple-900 text-white font-bold py-3 px-6 rounded-full shadow-lg hover:shadow-xl hover:scale-105 transform transition-all duration-300 ease-in-out">
+    Get Started
+  </button>
+</div>
+
+<!--custom values-->
+<div class="w-[550px] mt-10 p-6 border-4 border-yellow-700 rounded-xl mx-auto mb-4">
+<h2 class="text-[#9c6c2a] font-bold text-xl mb-3 ">Advantages of Tailwind CSS</h2>
+<p class="text-[#080808] ">
+  <ul class="list-disc pl-5 mt-3 font-medium text-[#080808]">
+    <li>clean code</li>
+    <li>faster development</li>
+    <li>Highly Customizable</li>
+    <li>Utility first approach</li>
+    <li>Responsive design made easy</li>
+   
+  </ul>
+</p>
+</div>
+
+<div class="flex  mb-1 mt-8  border border-gray-900 justify-center p-6 bg-gray-400 hover:bg-gray-600 transition-colors duration-300 rounded-lg">
+  <p class="text-center text-gray-800 font-bold">
+    All rights are reserved.
+  </p>
+</div>
+
+  </body>
+</html>
